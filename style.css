@@ -1,0 +1,593 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    
+}
+
+.sidebar {
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+     background-color: #121212;
+     border-radius: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 130px;
+     padding: 0.5rem 0.75rem;
+}
+
+.nav-logo img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 0.75rem;
+    margin-left: 0.7rem;
+}
+.nav-logo a {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+}
+
+.nav-option {
+    line-height: 2rem;
+    opacity: 0.7;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+ .nav-option:hover {
+    opacity: 1.5;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+} 
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 60%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    
+}
+
+.options header{
+    background-color: #121212;
+    margin-top: 0.20rem;
+}
+
+.lib-box main {
+    overflow-y: scroll;
+    max-height: 20vh;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    position: relative;
+    margin-left: 18rem;
+    margin-top: -1.9rem;
+    font-weight: 400;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 2rem 0 0.5rem ;
+    padding: 0.75rem 1rem;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box-p2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.left-footer {
+   margin-top: 2rem;
+   margin-left: 2rem;
+}
+
+
+.footer-option a {
+    margin-right: 0.30rem;
+    margin-inline-end: 2rem;
+    font-size: 0.90rem;
+    opacity: 0.70;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.footer-icon {
+   margin-top: 1.5rem;
+   margin-right: 10rem;
+   padding: 0.50rem;
+   border: 1px solid white;
+   border-radius: 20px;
+   color: white;
+   opacity: 0.75;
+}
+
+.footer-icon:hover {
+    opacity: 2;
+    font-size: 1.1rem;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color:#121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem;
+    z-index: 10;
+}
+
+
+.sticky-nav icons {
+    margin: 0.75rem;
+}
+
+.sticky-nav-icons i {
+    display: none;
+}
+
+
+.sticky-nav-features {
+     display: flex;
+     margin-left: 22rem;
+}
+
+.sticky-nav-features a {
+    margin-left: 2rem;
+    opacity: 0.75;
+    font-weight: 500;
+}
+
+.sticky-nav-features a:hover {
+    opacity: 2;
+    font-weight: 700;
+}
+.sticky-nav-partition {
+    font-size: 2rem;
+    margin-left: 2rem;
+    opacity: 0.50;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    margin-right: 1rem;
+}
+
+.buttons > *{
+    margin: 0 15px;
+}
+.signupbtn {
+    background-color: #121212;
+    color: rgb(156, 148, 148);
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.signupbtn:hover {
+    font-size: 17px;
+    color: white;
+}
+
+.loginbtn{
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+}
+
+.loginbtn:hover {
+    font-weight: 800;
+}
+
+@media (min-width: 600px) and (max-width:1020px) {
+    .hide {
+        display:none;
+}
+    .sidebar {
+        background-color: #121212;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 233px;
+    }
+
+    .main-content {
+         width: 100vw;
+    }
+    .music-player {
+        width: 100vw;
+    }
+    .album {
+        display: none;
+    }
+    .sticky-nav i {
+        display: block;
+    }
+   
+    
+}
+
+@media (max-width:599px) {
+   
+    .hide {
+        display:none;
+    }
+    .sidebar {
+        background-color: #121212;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 233px;
+    }
+
+    .main-content {
+         width: 100vw;
+    }
+    .music-player {
+        width: 100vw;
+    }
+    .album {
+        display: none;
+    }
+    .sticky-nav i {
+        display: block;
+    }
+    .social-media i {
+        display: none;
+    
+   }
+   .panel {
+    width: 100vw;
+   }
+}
+
+.card {
+    position: relative;
+    background-color: #222;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    
+}
+
+.overlay i {
+    border: 12px solid green;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    left: 6.5rem;
+    bottom: 3.7rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    background-color: #333;
+    opacity: 1;
+    
+}
+.card:hover .overlay i {
+    opacity: 1;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 50vh;
+}
+
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+
+
+.card-title {
+    font-weight: 600;
+    margin-top: 0.50rem;
+}
+
+.card-info {
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+
+.panel {
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    margin-left: -1rem;
+    padding-left: -3rem;
+    margin-top: 4rem;
+    
+}
+
+.panel p {
+    font-weight: 600;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    opacity: 0.75;
+}
+
+ul a:hover {
+    opacity: 1;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    justify-content: right;
+    font-size: 1.2rem;
+    margin-top: -9rem;
+    margin-right: 1.75rem;
+    padding-right: 0rem;
+}
+
+.social-media i {
+    border: 10px solid #232323;
+    background-color: #232323;
+    border-radius: 50px;
+    opacity: 0.75;
+    margin-right: 0.70rem;
+    margin-left: 0.50rem;
+    text-decoration: none;
+}
+
+.social-media i.insta:hover {
+    opacity: 2;
+    background-color: #232323;
+    font-size: 1.3rem;
+}
+.social-media i.twit:hover {
+    opacity: 2;
+    background-color: #232323;
+    font-size: 1.3rem;
+}
+.social-media i.fb:hover {
+    opacity: 2;
+    background-color: #232323;
+    font-size: 1.3rem;
+}
+
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 100%;
+    height: 5%;
+    border-top:  1px solid white;
+    opacity: 0.4;
+}
+
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.album {
+    width: 25%;
+}
+
+.album-content img {
+    height: 3rem;
+    margin-right: 1rem;
+    position: fixed;
+    bottom: 1rem;
+}
+
+.album-arrow {
+     position: absolute;
+     top: 1rem;
+     left: 1.5rem;
+     opacity: 0;
+     
+}
+
+.album-arrow:hover {
+     opacity: 1;
+     font-size: 1rem;
+}
+
+.album-content p {
+    display: flex;
+    justify-content: center;
+}
+.album-title {
+    margin-bottom: 2rem;
+    margin-left: -3.5rem;
+    font-size: 0.50;
+}
+
+.album-title {
+    text-decoration: none;
+}
+
+.album-title:hover {
+    text-decoration: underline;
+}
+
+.album-info {
+    margin-bottom: 0.1rem;
+    margin-left: -4.5rem;
+    position: absolute;
+    left: 8.5rem;
+    bottom: 0.80rem;
+    font-size: 0.75rem;
+}
+
+.album-info {
+    text-decoration: none;
+}
+
+.album-info:hover {
+    text-decoration: underline;
+}
+
+.album-icon{
+    position: absolute;
+    top: 1.8rem;
+    left: 18%;
+    opacity: 0.7;
+}
+
+.album-icon:hover {
+    opacity: 1;
+}
+
+
+.player {
+    width: 75%;
+}
+
+.playback-bar audio {
+    width: 80%;
+    height: 35px;
+    text-align: left;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-control-panel {
+    background-color: transparent;
+}
+
+audio {
+    opacity: 0.75;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+}
+
+
+
